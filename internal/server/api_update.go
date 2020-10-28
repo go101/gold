@@ -108,11 +108,11 @@ func (ds *docServer) updateGold() {
 			return err
 		}
 
-		appPkgPath := "go101.org/gold"
+		appPkgPath := "go101.org/golds"
 		switch appName := filepath.Base(os.Args[0]); appName {
-		case "godoge", "gocore", "golds":
+		case "godoge", "gocore", "gold":
 			appPkgPath += "/" + appName
-		case "gold":
+		case "golds":
 		default:
 			// ToDo: should update, then move the name
 		}

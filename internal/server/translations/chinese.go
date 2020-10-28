@@ -170,11 +170,11 @@ func (*Chinese) Text_RequireStat(numRequires, numRequiredBys int) string {
 func (*Chinese) Text_UpdateTip(tipName string) string {
 	switch tipName {
 	case "ToUpdate":
-		return `<b>Gold</b>已经有一个多月没有更新了，运行<b>go get -u go101.org/gold</b>或者<b><a href="/update">点击</a></b>来更新它。`
+		return `<b>Golds</b>已经有一个多月没有更新了，运行<b>go get -u go101.org/golds</b>或者<b><a href="/update">点击</a></b>来更新它。`
 	case "Updating":
-		return `<b>Gold</b>正在被更新中.....`
+		return `<b>Golds</b>正在被更新中.....`
 	case "Updated":
-		return `<b>Gold</b>已经被更新了，重启此gold服务进程可以看到最新的效果。`
+		return `<b>Golds</b>已经被更新了，重启此golds服务进程可以看到最新的效果。`
 	}
 	return ""
 }
